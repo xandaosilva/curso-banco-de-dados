@@ -31,6 +31,7 @@ select * from tipo_produto where codigo = 1;
 select codigo, descricao from tipo_produto where codigo = 2;
 select * from produto where descricao = 'Laptop';
 select codigo, descricao, tipo_produto from produto where preco <= 500;
+select p.codigo as codgio, p.descricao as descricao, p.preco as preco, tp.descricao as tipo from produto as p, tipo_produto as tp where p.tipo_produto = tp.codigo;
 
 update tipo_produto set descricao = 'Nobreak' where codigo = 3;
 update produto set descricao = 'Notebook', preco = '2800' where codigo = 2;
