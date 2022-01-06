@@ -27,6 +27,10 @@ insert into produto (descricao, preco, tipo_produto) values ('Notebook', '1200',
 select * from tipo_produto;
 select * from produto;
 select p.codigo as cod, p.descricao as descr, p.preco as pre, p.tipo_produto as ctp from produto as p;
+select * from tipo_produto where codigo = 1;
+select codigo, descricao from tipo_produto where codigo = 2;
+select * from produto where descricao = 'Laptop';
+select codigo, descricao, tipo_produto from produto where preco <= 500;
 
 update tipo_produto set descricao = 'Nobreak' where codigo = 3;
 update produto set descricao = 'Notebook', preco = '2800' where codigo = 2;
